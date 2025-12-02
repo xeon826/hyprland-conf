@@ -1,0 +1,60 @@
+- defaults:
+    link:
+      relink: true
+      force: true
+      create: true
+
+- clean: ['~']
+
+- shell:
+    - [git submodule update --init --recursive, Initializing and updating submodules]
+
+- create:
+    - ~/.config
+    - ~/.local/bin
+    - ~/.ncmpcpp
+    - ~/.mcphub
+
+- link:
+    ~/.config/mpDris2: .config/mpDris2
+    ~/.config/quickshell: .config/quickshell
+    ~/.config/fish: .config/fish
+    ~/.config/hypr: .config/hypr
+    ~/.config/alacritty: .config/alacritty.toml
+    ~/.config/ranger: .config/ranger
+    ~/yt-dlp.conf: yt-dlp.conf
+    ~/.vimrc: vimrc
+    ~/.config/awesome: awesome-copycats
+    ~/.config/mpd: .config/mpd
+    ~/.ncmpcpp: ncmpcpp
+    ~/.config/kitty: .config/kitty
+    ~/.config/nvim: .config/nvim
+    ~/.config/ksb-nvim: .config/ksb-nvim
+    ~/.tmux.conf: tmux.conf
+    ~/.local/bin/mkrep: mkrep.py
+    ~/.Xmodmap: Xmodmap
+    ~/.config/lazygit/config.yml: .config/lazygit/lazygit.yml
+    ~/.inputrc: inputrc
+    ~/.local/share/konsole: .local/share/konsole
+    ~/.config/fontconfig: .config/fontconfig
+    ~/.local/share/icons/illogical-impulse.svg: .local/share/icons/illogical-impulse.svg
+    ~/.config/chrome-flags.conf: .config/chrome-flags.conf
+    ~/.config/code-flags.conf: .config/code-flags.conf
+    ~/.config/darklyrc: .config/darklyrc
+    ~/.config/dolphinrc: .config/dolphinrc
+    ~/.config/foot: .config/foot
+    ~/.config/fuzzel: .config/fuzzel
+    ~/.config/kdeglobals: .config/kdeglobals
+    ~/.config/kde-material-you-colors: .config/kde-material-you-colors
+    ~/.config/konsolerc: .config/konsolerc
+    ~/.config/Kvantum: .config/Kvantum
+    ~/.config/matugen: .config/matugen
+    ~/.config/mpv: .config/mpv
+    ~/.config/starship.toml: .config/starship.toml
+    ~/.config/thorium-flags.conf: .config/thorium-flags.conf
+    ~/.config/wlogout: .config/wlogout
+    ~/.config/xdg-desktop-portal: .config/xdg-desktop-portal
+    ~/.config/zshrc.d: .config/zshrc.d
+
+# - shell:
+#     - [./Tokyonight-GTK-Theme/install.sh -d ~/.config/gtk-4.0 -c dark -l, Installing gtk 4.0 theme]
